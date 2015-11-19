@@ -1,0 +1,42 @@
+﻿<!DOCTYPE HTML>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <title>stroke</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <meta name="format-detection" content="telephone=no" />
+
+  <style>
+    .device { position: absolute;top: 43%;left: 50%;margin: -200px 0 0 -200px;stroke-dasharray: 4000;stroke-dashoffset: 4000;-webkit-animation: dash 2s infinite;animation: dash 2s infinite; }
+    @-webkit-keyframes dash {
+      100% { stroke-dashoffset: 0; }
+    }
+    @keyframes dash {
+      100% { stroke-dashoffset: 0; }
+    }
+
+  </style>
+
+  <svg>
+    <symbol id="phone" viewBox="0 0 1024 1024">
+      <path fill="none" stroke="#000" stroke-width="3" d="M768 0h-512c-53.056 0-96 42.976-96 96v832c0 53.056 42.976 96 96 96h512c52.992 0 96-43.008 96-96v-832c0-53.056-43.008-96-96-96zM800 928c0 17.632-14.368 32-32 32h-512c-17.664 0-32-14.304-32-32v-64.128h576v64.128zM800 831.872h-576v-639.872h576v639.872zM800 160h-576v-64c0-17.664 14.336-32 32-32h512c17.632 0 32 14.336 32 32v64zM576 112c0 8.832-7.2 16-16 16h-96c-8.864 0-16-7.168-16-16v0c0-8.864 7.136-16 16-16h96c8.8 0 16 7.136 16 16v0zM544 911.872c0 8.8-7.2 16-16 16h-32c-8.832 0-16-7.2-16-16v0c0-8.864 7.168-16 16-16h32c8.8 0 16 7.136 16 16v0z"></path>
+    </symbol>
+  </svg>
+
+
+</head>
+
+<body>
+
+  <div class="contain">
+
+ 
+    <svg width="400" height="400" class="device"><use xlink:href="#phone"></use></svg>
+
+          
+  </div>
+
+</body>
+</html>

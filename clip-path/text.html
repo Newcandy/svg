@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>text</title>
+	<style type="text/css">
+	
+	.txt { display: inline-block;position: relative;font-size: 70px;text-transform: uppercase;color: transparent; }
+	.txt:before, .txt:after { content: attr(data-letters);position: absolute;left: 0;top: 0;color: #ff0;-webkit-transition: all .5s;-moz-transition: all .5s;transition: all .5s;-webkit-backface-visibility: hidden; }
+
+	.txt:before { -webkit-clip-path: polygon(0 0,100% 0,100% 100%);clip-path: polygon(0 0,100% 0,100% 100%); }
+	.txt:after { -webkit-clip-path: polygon(0 0,0 100%,100% 100%);clip-path: polygon(0 0,0 100%,100% 100%); }
+		.txt:hover:after { color: #ff0;-webkit-transform: translate(-6px, -1px);
+		-ms-transform: translate(-4px, -1px);
+		-o-transform: translate(-4px, -1px);
+		transform: translate(-4px, -1px); }  
+		.txt:hover:before { color: #f00;-webkit-transform: translate(6px, 1px);
+		-ms-transform: translate(4px, 1px);
+		-o-transform: translate(4px, 1px);
+		transform: translate(4px, 1px);  }  
+
+
+	</style>
+</head>
+<body>
+
+	<a class="txt" data-letters="break up" href="#">break up</a>
+
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>line</title>
+	<style type="text/css">
+		.line { position: absolute;left: 0;top: 0;width: 28px;height: 34px;background: url(line.png) 0 0 no-repeat;-webkit-animation: moveLine .8s ease infinite;animation: moveLine .8s ease infinite; }
+
+		@-webkit-keyframes moveLine {
+		  0% {
+		    -webkit-clip-path: polygon(0 100%, 0 100%, 0 100%);
+		  }
+		  25% {
+		    -webkit-clip-path: polygon(0 82%, 100% 81%, 100% 100%, 0 100%);
+		  }
+		  50% {
+		    -webkit-clip-path: polygon(20% 0%, 80% 0%, 73% 47%, 74% 64%, 99% 100%, 0 100%, 56% 77%, 64% 58%);
+		  }
+		  60% {
+		    -webkit-clip-path: polygon(50% 0%, 72% 48%, 75% 70%, 100% 100%, 0 100%, 55% 78%, 5% 68%);
+		  }
+		  75% {
+		    -webkit-clip-path: polygon(28% 0, 100% 34%, 79% 100%, 0 100%, 0 0);
+		  }
+		  100% {
+		    -webkit-clip-path: polygon(100% 0, 100% 100%, 0 100%, 0 0);
+		  }
+
+		}
+
+	</style>
+</head>
+<body>
+
+	<div class="line"></div>
+
+</body>
+</html>
